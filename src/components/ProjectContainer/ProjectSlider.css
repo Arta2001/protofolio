@@ -1,0 +1,90 @@
+.main-slider-container {
+  justify-content: center;
+  /* box-shadow: var(--shadow); */
+  position: relative;
+  overflow: hidden;
+  display: none;
+  background: none;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.main-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.slider-card {
+  background: white;
+  display: grid;
+  border-radius: 10px;
+  grid-template-columns: repeat(auto-fill, 350px);
+  margin: 5px;
+  overflow: hidden;
+  flex-flow: row;
+}
+.projectName p {
+  padding: 10px;
+  font-size: 24px;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.projectDescription {
+  margin: 10px;
+  text-align: left;
+  width: auto;
+  white-space: normal;
+  font-size: 16px;
+  word-wrap: break-word;
+}
+
+.projectStack p {
+  bottom: 0;
+  padding: 10px;
+}
+
+.techStack {
+  margin: 10px;
+  font-style: bold;
+  color: #123C69;
+}
+.chip {
+  margin: 10px;
+  display: inline-block;
+  padding: 0 25px;
+  height: 30px;
+  color: white;
+  font-size: 12px;
+  font-style: bold;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: #123C69;
+}
+.githubLink{
+  margin-top:10px;
+  padding-left: 5px;
+  align-items: center;
+}
+.githubIcon{
+padding: 20px;
+text-align: center;
+}
+
+@media (min-width: 350px) {
+  .slider{ grid-template-columns: repeat(1, 1fr); }
+}@media (min-width: 900px) {
+  .slider{ grid-template-columns: repeat(3, 1fr); }
+}@media (max-width: 750px) {
+  .slider{ grid-template-columns: repeat(2, 1fr); }}
+  @media (max-width: 550px) {
+    .slider{ grid-template-columns: repeat(1, 1fr); }}

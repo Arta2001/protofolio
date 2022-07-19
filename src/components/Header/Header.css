@@ -1,0 +1,15 @@
+.header {
+  height: 5em;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+hr.new1 {
+  border-top: 1.5px solid #d6dbfb;
+}
+@media (max-width: 600px) {
+  .header {
+    height: 6em;
+  }
+}

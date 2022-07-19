@@ -1,0 +1,92 @@
+.about {
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.about__name {
+  color: #123C69;
+  font-family: "Arial ";
+}
+
+.about__role {
+  margin-top: 1.2em;
+}
+
+.about__desc {
+  font-size: 15px;
+  max-width: 950px;
+  padding: 10px;
+  color:#123C69;
+  font-family: 'Arial';
+}
+
+.about__contact {
+  margin-top: 2.4em;
+}
+
+.about .link--icon {
+  margin-right: 0.8em;
+}
+
+.about .btn--outline {
+  margin-right: 1em;
+}
+.about .circular--square {
+  border-radius: 50%;
+}
+.about .circular--portrait {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.about .circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutCard {
+  border-radius: 10px;
+  padding: 2em;
+  width: 100%;
+  background-color: #ffffff;
+  color:#123C69;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  width: 450px;
+  position: relative;
+  margin: auto;
+  margin-top: 5px;
+  align-items: center;
+  color:#123C69;
+
+}
+.emailElement {
+  display: grid;
+  grid-template-columns: repeat(2, 30px);
+  width: 300px;
+  margin: auto;
+  margin-top: 5px;
+  position: relative;
+  align-items: center;
+  color:#123C69;
+}
+.address {
+  color: #123C69;
+}
+.list span:nth-child(3n + 1):before {
+  content: '';
+  height: 3em; 
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+}
+
